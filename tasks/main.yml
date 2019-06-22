@@ -1,0 +1,5 @@
+---
+- name: remove insecure services
+  apt:
+    name: ["xinetd", "inetd", "ypserv", "telnet-server", "rsh-server", "prelink"]
+    state: absent
